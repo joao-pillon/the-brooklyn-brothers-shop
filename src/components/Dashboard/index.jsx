@@ -5,15 +5,13 @@ import Footer from "../Footer/";
 import { useState } from "react";
 
 const Dashboard = () => {
-
-  const [filtered, setFiltered] = useState() 
-
+  const [filtered, setFiltered] = useState();
 
   return (
     <>
-      <Header filtered={filtered} setFiltered={setFiltered}/>
-      <ProductsList filtered={filtered}/>
-      <About/>
+      <Header filtered={filtered} setFiltered={setFiltered} />
+      <ProductsList filtered={filtered} />
+      <About />
       <Footer />
     </>
   );

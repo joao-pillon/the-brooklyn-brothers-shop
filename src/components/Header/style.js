@@ -19,7 +19,6 @@ export const HeaderMain = styled.div`
     height: 80px;
   }
 
-
   @media only screen and (max-width: 768px) {
     text-align: right;
   }
@@ -91,18 +90,17 @@ export const H3 = styled.div`
 `;
 
 export const Input = styled.div`
-
-input{
-  height: 17px; 
-  width: 225px;
-  margin:10px auto;
-}
+  input {
+    height: 17px;
+    width: 225px;
+    margin: 10px auto;
+  }
   button {
-    background-color:#f9f9f9;
+    background-color: #f9f9f9;
     width: 150px;
     height: 25px;
     border-radius: 10px;
-    :hover{
+    :hover {
       cursor: pointer;
       filter: brightness(0.8);
     }

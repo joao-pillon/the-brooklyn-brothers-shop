@@ -8,15 +8,16 @@ const Header = ({ filtered, setFiltered }) => {
   const data = jsonData.data.nodes;
 
   const filterCategory = (category) => {
-
     const filter = data.filter((product) => {
-      console.log(product.category.name)
       for (let i = 0; i <= product.name.length; i++) {
-        if (product.category.name == category) return true;
+        if (
+          product.category.name[4] === category[4] ||
+          product.category.name.length === category.length
+        )
+          return true;
       }
       return false;
     });
-
     setFiltered([...filter]);
   };
 
@@ -39,7 +40,9 @@ const Header = ({ filtered, setFiltered }) => {
       <Hr>
         <Input>
           <input type="text" onChange={(e) => filterCategory(e.target.value)} />
-          <button onClick={() => filterCategory(filtered)}>Search by Category</button>
+          <button onClick={() => filterCategory(filtered)}>
+            Search by Category
+          </button>
         </Input>
       </Hr>
     </>

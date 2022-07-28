@@ -1,9 +1,11 @@
-import {FooterMain} from "./style"
+import { FooterMain } from "./style";
 
 const Footer = () => {
-    return <div>
-<FooterMain/>
+  return (
+    <div>
+      <FooterMain />
     </div>
-}
+  );
+};
 
 export default Footer;
