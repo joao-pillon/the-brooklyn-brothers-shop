@@ -1,6 +1,5 @@
-import { Main, Header } from "./style";
+import { Main } from "./style";
 import Product from "../Product/index";
-import { useState, useEffect } from "react";
 import jsonData from "../../data/productsCategory.json";
 
 const ProductsList = ({ filtered }) => {

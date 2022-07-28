@@ -1,4 +1,4 @@
-import { HeaderMain, Hr, Nav, H2, H3, Input, Left } from "./style";
+import { HeaderMain, Hr, Nav, H3, Input, Left } from "./style";
 import logo from "../../assets/logo-black.png";
 import Hamburger from "hamburger-react";
 import { useState } from "react";

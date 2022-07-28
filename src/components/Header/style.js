@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderMain = styled.div`
+    text-align: center;
   font-family: "Ultra", serif;
   background: #200f0f;
   background: linear-gradient(90deg, #200f0f 0%, #000000 99%);
@@ -35,6 +36,7 @@ export const HeaderMain = styled.div`
 `;
 
 export const Hr = styled.div`
+    text-align: center;
   background-color: #2b3030;
   height: 43px;
   box-shadow: 1px 8px 9px 2px rgba(0, 0, 0, 0.75);
